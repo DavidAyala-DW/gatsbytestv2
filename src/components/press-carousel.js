@@ -11,8 +11,8 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import Article from '@/components/article'
 
-import ChevronLeft from '@/components/svg/chevron-left.svg'
-import ChevronRight from '@/components/svg/chevron-right.svg'
+// import ChevronLeft from '@/components/svg/chevron-left.svg'
+// import ChevronRight from '@/components/svg/chevron-right.svg'
 
 export default function PressCarousel(props) {
   const { articles, className } = props
@@ -55,10 +55,10 @@ export default function PressCarousel(props) {
         {articles.length > slidesPerPage && (
           <div className="flex justify-center sm:justify-start lg:justify-end space-x-2 mt-9 sm:pl-5">
             <ButtonBack className="px-6 py-5 bg-gray-900 rounded">
-              <ChevronLeft />
+              {/* <ChevronLeft /> */}
             </ButtonBack>
             <ButtonNext className="px-6 py-5 bg-gray-900 rounded">
-              <ChevronRight />
+              {/* <ChevronRight /> */}
             </ButtonNext>
           </div>
         )}

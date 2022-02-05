@@ -1,14 +1,14 @@
 import Nav from '@/components/nav'
-import Instagram from '@/components/svg/instagram.svg'
-import Twitter from '@/components/svg/twitter.svg'
-import Facebook from '@/components/svg/facebook.svg'
-import Discord from '@/components/svg/discord.svg'
+// import Instagram from '@/components/svg/instagram.svg'
+// import Twitter from '@/components/svg/twitter.svg'
+// import Facebook from '@/components/svg/facebook.svg'
+// import Discord from '@/components/svg/discord.svg'
 
 const supportedIcons = {
-  instagram: Instagram,
-  twitter: Twitter,
-  facebook: Facebook,
-  discord: Discord
+  // instagram: Instagram,
+  // twitter: Twitter,
+  // facebook: Facebook,
+  // discord: Discord
 }
 
 export default function SocialNav (props) {
@@ -23,7 +23,7 @@ export default function SocialNav (props) {
     return matchingIconKey
       ? {
           ...link,
-          label: <Icon className="w-auto h-[22px]" aria-label={link.label} />
+          // label: <Icon className="w-auto h-[22px]" aria-label={link.label} />
         }
       : link
   })
