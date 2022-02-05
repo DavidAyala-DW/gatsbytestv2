@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Divide as Burger } from 'hamburger-react'
 import { FocusOn } from 'react-focus-on'
 
-// import MenuHex from '@/components/svg/menu-hex.svg'
+import MenuHex from '@/components/svg/menu-hex.svg'
 import Nav from '@/components/nav'
 import SocialNav from '@/components/social-nav'
 import WaitlistButton from '@/components/waitlist-button'
@@ -61,12 +61,12 @@ export default function Header(props) {
                 className="grid items-center justify-center"
                 aria-hidden="true"
               >
-                {/* <MenuHex
+                <MenuHex
                   className={classNames(
                     'both-span-full',
                     isMenuOpen && 'drop-shadow-xl'
                   )}
-                /> */}
+                />
                 <span className="both-span-full flex justify-center text-orange scale-75">
                   <Burger
                     color="currentColor"

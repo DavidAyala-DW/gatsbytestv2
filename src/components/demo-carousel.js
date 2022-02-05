@@ -10,8 +10,8 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import ReactPlayer from 'react-player/lazy'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-// import ChevronLeft from '@/components/svg/chevron-left.svg'
-// import ChevronRight from '@/components/svg/chevron-right.svg'
+import ChevronLeft from '@/components/svg/chevron-left.svg'
+import ChevronRight from '@/components/svg/chevron-right.svg'
 
 import demoCarouselBg from '@/images/demo-carousel-bg.svg'
 import phoneFrame from '@/images/phone-frame.png'
@@ -99,11 +99,11 @@ export default function DemoCarousel(props) {
 
         <div className="flex items-center space-x-9 mb-5 md:mb-0 scale-75 md:scale-90 lg:scale-100 origin-top md:origin-top-left">
           <ButtonBack className="px-6 py-5 bg-gray-900 rounded">
-            {/* <ChevronLeft /> */}
+            <ChevronLeft />
           </ButtonBack>
           <DotGroup className="hex-dot-group flex space-x-5" />
           <ButtonNext className="px-6 py-5 bg-gray-900 rounded">
-            {/* <ChevronRight /> */}
+            <ChevronRight />
           </ButtonNext>
         </div>
       </figcaption>

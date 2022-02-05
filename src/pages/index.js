@@ -1,7 +1,7 @@
 import Layout from '@/components/layout'
 import { Helmet } from 'react-helmet'
-// import Dot from '@/components/svg/dot.svg'
-// import FormBgBlur from '@/components/svg/wide-button-bg-blur.svg'
+import Dot from '@/components/svg/dot.svg'
+import FormBgBlur from '@/components/svg/wide-button-bg-blur.svg'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -167,7 +167,7 @@ export default function IndexPage(props) {
               {heroData.showBetaAccessTag && (
                 <p className="flex items-center justify-center mb-3 md:mb-4 uppercase font-bold text-xs tracking-[1px] leading-tight text-teal">
                   Beta Access{' '}
-                  {/* <Dot className="ml-2.5 text-teal-light drop-shadow-current-sm relative" /> */}
+                  <Dot className="ml-2.5 text-teal-light drop-shadow-current-sm relative" />
                 </p>
               )}
 
@@ -185,10 +185,10 @@ export default function IndexPage(props) {
                   {heroData.joinButtonLabel}
                 </WaitlistButton>
               </div>
-              {/* <FormBgBlur
+              <FormBgBlur
                 className="absolute -bottom-48 left-1/2 z-[-1] -translate-x-1/2"
                 aria-hidden="true"
-              /> */}
+              />
             </div>
           </div>
         </section>

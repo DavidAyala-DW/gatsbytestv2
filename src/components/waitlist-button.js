@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import { useScript } from 'usehooks-ts'
 
-// import Loader from '@/components/svg/three-dots-loader.svg'
+import Loader from '@/components/svg/three-dots-loader.svg'
 
 export default function WaitlistButton(props) {
   const { children, className, ...rest } = props
@@ -17,7 +17,7 @@ export default function WaitlistButton(props) {
       disabled={!isReady}
       {...rest}
     >
-      {/* {isReady ? children : <Loader className="w-12 mx-auto" title="Loading" />} */}
+      {isReady ? children : <Loader className="w-12 mx-auto" title="Loading" />}
     </button>
   )
 }
